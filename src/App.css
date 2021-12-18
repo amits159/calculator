@@ -1,24 +1,32 @@
-body {
+* {
     font-family: 'Courier New', Courier, monospace;
+    color: white;
+    font-weight: bold;
+}
+
+body {
     background-color: rgb(255, 230, 230);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 #container {
     background-color: rgb(155, 195, 253);
-    display: flex;
-    flex-direction: column;
     width: 20vw;
     height: 50vh;
-    margin-left: 40%;
-    margin-top: 7%;
-    border: 5px solid black;
+    border: 5px solid rgb(58, 147, 230);
     border-radius: 10px;
+    margin-top: 20%;
 }
 
-input {
+#input {
     text-align: right;
     padding: 15px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+    height: 10%;
+    background-color: #5a5a59;
 }
 
 table {
@@ -40,8 +48,6 @@ button {
     border-radius: 5px;
     background-color: gray;
     border: none;
-    color: white;
-    font-weight: bold;
     padding: 5px;
 }
 
@@ -55,14 +61,14 @@ button:active {
 
 @media (max-width: 900px) {
   #container {
-      width: 40%;
+      width: 80%;
+      margin-top: 5%;
   }
-  
 }
 
 @media (max-width: 500px) {
   #container {
-      width: 100%;
+      width: 96%;
+      margin-top: 5%;
   }
-  
 }
