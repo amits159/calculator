@@ -55,15 +55,14 @@ button:active {
 
 @media (max-width: 900px) {
   #container {
-      min-width: 40%;
-      max-width: 40%;
+      width: 40%;
   }
   
 }
 
 @media (max-width: 500px) {
   #container {
-      max-width: 100%;
+      width: 100%;
   }
   
 }
