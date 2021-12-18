@@ -16,11 +16,16 @@ function Container() {
             console.log(first);
             return;
         }
-        if (char === '.' && input.includes('.')) {
-            return;
+        if (char === '.') {
+            if (input.includes('.')) {
+                return;
+            }
+            if (input === "") {
+                setInput('0.');
+            }
         }
         if (char === '=') {
-            setInput(CalcResult(first, operator, input));
+            setInput(CalcResult(first, operator, input).toString());
             setFirst("");
             setOperator("");
         }
@@ -40,7 +45,7 @@ function Container() {
 
     return (
         <div id='container'>
-            <input type="text" value={input} placeholder='0' disabled></input>
+            <div id='input'>{input}</div>
             <div>
                 <table>
                     <tbody>
