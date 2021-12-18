@@ -20,9 +20,6 @@ function Container() {
             if (input.includes('.')) {
                 return;
             }
-            if (input === "") {
-                setInput('0.');
-            }
         }
         if (char === '=') {
             setInput(CalcResult(first, operator, input).toString());
