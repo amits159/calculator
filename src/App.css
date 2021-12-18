@@ -52,3 +52,18 @@ button:hover {
 button:active {
     transform: scale(0.9, 0.9);
 }
+
+@media (max-width: 900px) {
+  #container {
+      min-width: 40%;
+      max-width: 40%;
+  }
+  
+}
+
+@media (max-width: 500px) {
+  #container {
+      max-width: 100%;
+  }
+  
+}
